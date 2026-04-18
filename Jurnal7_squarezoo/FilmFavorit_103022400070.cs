@@ -5,7 +5,7 @@ using System.Text.Json;
 
 namespace Jurnal7_squarezoo
 {
-    internal class FilmFavorit_103022400025
+    internal class FilmFavorit_103022400070
     {
         public string title { get; set; } = "";
         public string director { get; set; } = "";
@@ -21,19 +21,19 @@ namespace Jurnal7_squarezoo
 
             string json = File.ReadAllText(path);
 
-            FilmFavorit_103022400025? filmFavorit_103022400025 = JsonSerializer.Deserialize<FilmFavorit_103022400025>(json);
+            FilmFavorit_103022400070? filmFavorit_103022400070 = JsonSerializer.Deserialize<FilmFavorit_103022400070>(json);
 
-            if (filmFavorit_103022400025 is null)
+            if (filmFavorit_103022400070 is null)
             {
                 Console.WriteLine("Data film tidak dapat dibaca");
             }
 
-            Console.WriteLine($"Film {filmFavorit_103022400025.title} - {filmFavorit_103022400025.director}");
-            Console.WriteLine($"\t-{filmFavorit_103022400025.year}");
-            Console.WriteLine($"\t-{filmFavorit_103022400025.genre}");
-            Console.WriteLine($"\t-{filmFavorit_103022400025.rating}");
-            Console.WriteLine($"\t-{filmFavorit_103022400025.durationMinutes}");
-            Console.WriteLine($"\t-{filmFavorit_103022400025.isWatched}");
+            Console.WriteLine($"Film {filmFavorit_103022400070.title} - {filmFavorit_103022400070.director}");
+            Console.WriteLine($"\t-{filmFavorit_103022400070.year}");
+            Console.WriteLine($"\t-{filmFavorit_103022400070.genre}");
+            Console.WriteLine($"\t-{filmFavorit_103022400070.rating}");
+            Console.WriteLine($"\t-{filmFavorit_103022400070.durationMinutes}");
+            Console.WriteLine($"\t-{filmFavorit_103022400070.isWatched}");
         }
     }
 }
