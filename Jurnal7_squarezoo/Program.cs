@@ -12,3 +12,9 @@ Watchlist_103022400025 watchlist_103022400025 = new();
 
 // Panggil method readJSON
 watchlist_103022400025.readJSON();
+
+// Buat objek dari class GenreDictionary_103022400025
+GenreDictionary_103022400025 genreDictionary_103022400025 = new();
+
+// Panggil method readJSON
+genreDictionary_103022400025.ReadJSON();

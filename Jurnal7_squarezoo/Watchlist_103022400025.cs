@@ -5,6 +5,7 @@ using System.Text.Json;
 
 namespace Jurnal7_squarezoo
 {
+    // Class Movie untuk menampung data film dalam watchlist
     internal class Movie
     {
         public string id { get; set; } = "";
@@ -30,8 +31,6 @@ namespace Jurnal7_squarezoo
             // Deserialize
             Watchlist_103022400025 watchlist_103022400025 = JsonSerializer.Deserialize<Watchlist_103022400025>(json);
 
-
-
             // Cek dulu ada apa ngga
             if (watchlist_103022400025 is null)
             {
@@ -43,7 +42,8 @@ namespace Jurnal7_squarezoo
             Console.WriteLine($"Created By: {watchlist_103022400025.createdBy}");
             for (int i = 0; i < watchlist_103022400025.movies.Count; i++)
             {
-                Console.WriteLine($"{watchlist_103022400025.movies[i].id} {watchlist_103022400025.movies[i].title} ({watchlist_103022400025.movies[i].year} - {watchlist_103022400025.movies[i].rating})");
+                Console.WriteLine($"{watchlist_103022400025.movies[i].id} {watchlist_103022400025.movies[i].title} " +
+                    $"({watchlist_103022400025.movies[i].year} - {watchlist_103022400025.movies[i].rating})");
             }
         }
     }
